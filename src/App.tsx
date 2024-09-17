@@ -25,7 +25,7 @@ function App() {
     "Diamond", // From 1,000,000 coins to 2,000,000 coins
     "Epic", // From 2,000,000 coins to 10,000,000 coins
     "Legendary", // From 10,000,000 coins to 50,000,000 coins
-    "Master", // From 50,000,000 coins to 100,000,000 coins
+    "Builder", // From 50,000,000 coins to 100,000,000 coins
     "GrandMaster", // From 100,000,000 coins to 1,000,000,000 coins
     "Lord", // From 1,000,000,000 coins to ∞
   ];
@@ -150,11 +150,11 @@ function App() {
         <div className="w-full bg-black text-white h-screen font-bold flex flex-col max-w-xl">
           <div className="px-4 z-10">
             <div className="flex items-center space-x-2 pt-4">
-              <div className="p-1 rounded-lg bg-[#102025]">
+              {/* <div className="p-1 rounded-lg bg-[#102025]">
                 <Hamster size={24} className="text-[#d4d4d4]" />
-              </div>
+              </div> */}
               <div>
-                <p className="text-sm">Nikandr (CEO)</p>
+                <p className="text-sm">Brickstone</p>
               </div>
             </div>
             <div className="flex items-center justify-between space-x-4 mt-1">
@@ -185,16 +185,16 @@ function App() {
                   <p className="text-xs text-[#85827d] font-medium">
                     Profit per hour
                   </p>
-                  <div className="flex items-center justify-center space-x-1">
+                  <div className="flex items-center justify-center ">
                     <img
                       src={dollarCoin}
                       alt="Dollar Coin"
-                      className="w-[18px] h-[18px]"
+                      className="w-[40px] h-[40px]"
                     />
                     <p className="text-sm">
                       {formatProfitPerHour(profitPerHour)}
                     </p>
-                    <Info size={20} className="text-[#43433b]" />
+                    <Info size={20} className=" ml-1 text-[#43433b]" />
                   </div>
                 </div>
                 <div className="h-[32px] w-[2px] bg-[#43433b] mx-2"></div>
@@ -227,7 +227,7 @@ function App() {
                     className="mx-auto w-12 h-12"
                   />
                   <p className="text-[10px] text-center text-white mt-1">
-                    Daily cipher
+                    Daily Builder
                   </p>
                   <p className="text-[10px] font-medium text-center text-gray-400 mt-2">
                     {dailyCipherTimeLeft}
@@ -241,7 +241,7 @@ function App() {
                     className="mx-auto w-12 h-12"
                   />
                   <p className="text-[10px] text-center text-white mt-1">
-                    Daily combo
+                    Building combo
                   </p>
                   <p className="text-[10px] font-medium text-center text-gray-400 mt-2">
                     {dailyComboTimeLeft}
@@ -250,11 +250,11 @@ function App() {
               </div>
 
               <div className="px-4 mt-4 flex justify-center">
-                <div className="px-4 py-2 flex items-center space-x-2">
+                <div className="px-4 py-2 flex items-center ">
                   <img
                     src={dollarCoin}
                     alt="Dollar Coin"
-                    className="w-10 h-10"
+                    className="w-20 h-20"
                   />
                   <p className="text-4xl text-white">
                     {points.toLocaleString()}
@@ -271,7 +271,7 @@ function App() {
                     <img
                       src={mainCharacter}
                       alt="Main Character"
-                      className="w-full h-full"
+                      className="w-40 h-40"
                     />
                   </div>
                 </div>
@@ -288,7 +288,7 @@ function App() {
                 </div>
                 <div className="text-center text-[#85827d] w-1/5">
                   <Mine className="w-8 h-8 mx-auto" />
-                  <p className="mt-1">Mine</p>
+                  <p className="mt-1">Build</p>
                 </div>
                 <div className="text-center text-[#85827d] w-1/5">
                   <Friends className="w-8 h-8 mx-auto" />
@@ -304,7 +304,7 @@ function App() {
                     alt="Airdrop"
                     className="w-8 h-8 mx-auto"
                   />
-                  <p className="mt-1">Airdrop</p>
+                  <p className="mt-1">Upgrade</p>
                 </div>
               </div>
             </div>
