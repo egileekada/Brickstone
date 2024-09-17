@@ -1,6 +1,5 @@
 import { useState, useEffect } from "react";
-import "./App.css";
-import Hamster from "./icons/Hamster";
+import "./App.css"; 
 import {
   binanceLogo,
   dollarCoin,
