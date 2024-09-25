@@ -1,5 +1,5 @@
 import { Route, RouterProvider, createBrowserRouter, createRoutesFromElements } from "react-router-dom";
-import { HomePage, RewardPage } from "./page";
+import { EarnPage, HomePage, RewardPage } from "./page";
 
 function App() {
 
@@ -9,6 +9,7 @@ function App() {
       <Route path="/">
         <Route index element={<HomePage />} />
         <Route path="/reward" element={<RewardPage />} />
+        <Route path="/earn" element={<EarnPage />} />
       </Route>
     )
   );

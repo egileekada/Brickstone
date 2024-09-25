@@ -280,18 +280,18 @@ export default function HomePage() {
               />
               <p className="mt-1">Exchange</p>
             </div>
-            <div className="text-center text-[#85827d] w-1/5">
+            <button onClick={() => navigate("/reward")} className="text-center text-[#85827d] w-1/5">
               <Mine className="w-8 h-8 mx-auto" />
               <p className="mt-1">Build</p>
-            </div>
+            </button>
             <div className="text-center text-[#85827d] w-1/5">
               <Friends className="w-8 h-8 mx-auto" />
               <p className="mt-1">Friends</p>
             </div>
-            <div onClick={() => navigate("/reward")} className="text-center text-[#85827d] w-1/5">
+            <button onClick={() => navigate("/earn")} className="text-center outline-none text-[#85827d] w-1/5">
               <Coins className="w-8 h-8 mx-auto" />
               <p className="mt-1">Earn</p>
-            </div>
+            </button>
             <div className="text-center text-[#85827d] w-1/5">
               <img
                 src={hamsterCoin}
