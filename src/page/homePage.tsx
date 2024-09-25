@@ -6,6 +6,7 @@ import Mine from '../icons/Mine';
 import Settings from '../icons/Settings';
 import { binanceLogo, dollarCoin, dailyReward, dailyCipher, dailyCombo, mainCharacter, hamsterCoin } from '../images';
 import { useNavigate } from 'react-router-dom';
+import "../App.css"
 
 export default function HomePage() {
 
@@ -260,7 +261,7 @@ export default function HomePage() {
               className="w-80 h-80 p-4 flex justify-center rounded-full circle-outer"
               onClick={handleCardClick}
             >
-              <div className="w-fit h-full rounded-full circle-inner">
+              <div className="w-full h-full rounded-full circle-inner">
                 <img
                   src={mainCharacter}
                   alt="Main Character"
@@ -287,7 +288,7 @@ export default function HomePage() {
               <Friends className="w-8 h-8 mx-auto" />
               <p className="mt-1">Friends</p>
             </div>
-            <div onClick={()=> navigate("/reward")} className="text-center text-[#85827d] w-1/5">
+            <div onClick={() => navigate("/reward")} className="text-center text-[#85827d] w-1/5">
               <Coins className="w-8 h-8 mx-auto" />
               <p className="mt-1">Earn</p>
             </div>
