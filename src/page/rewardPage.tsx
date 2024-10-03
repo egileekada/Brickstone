@@ -25,8 +25,7 @@ export default function RewardPage() {
                 <div role="button" onClick={() => navigate("/")} className=" absolute top-3 right-3  " >
                     <IoMdCloseCircle size={"30px"} />
                 </div>
-            </div>
-
+            </div> 
             <div className="flex-grow bg-[#b100cd] text-white top-glow mt-4 h-full rounded-t-[48px] relative z-0">
                 <div className="absolute top-[2px] left-0 right-0 flex flex-col h-full flex-1 overflow-y-auto gap-4 bottom-0 bg-[#1d2025] p-6 rounded-t-[46px]">
                     <div className=" w-full h-full flex flex-col gap-4 " >
