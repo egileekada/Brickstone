@@ -8,6 +8,7 @@ import mainCharacter from "./main.png";
 import mainCharacterTwo from "./main-character-two.png";
 import hamsterCoin from "./main.png";
 import house from "./house.jpeg";
+import builder from "./builder.png";
 
 export {
     hamsterExchange,
@@ -19,5 +20,6 @@ export {
     mainCharacter,
     mainCharacterTwo,
     hamsterCoin,
-    house
+    house,
+    builder
 };
