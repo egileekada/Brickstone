@@ -9,6 +9,7 @@ import mainCharacterTwo from "./main-character-two.png";
 import hamsterCoin from "./main.png";
 import house from "./house.jpeg";
 import builder from "./builder.png";
+import bg from "./purplebg.jpeg";
 
 export {
     hamsterExchange,
@@ -21,5 +22,6 @@ export {
     mainCharacterTwo,
     hamsterCoin,
     house,
-    builder
+    builder,
+    bg
 };

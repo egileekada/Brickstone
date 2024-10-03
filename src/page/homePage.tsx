@@ -4,7 +4,7 @@ import Friends from '../icons/Friends';
 import Info from '../icons/Info';
 import Mine from '../icons/Mine';
 import Settings from '../icons/Settings';
-import { binanceLogo, dollarCoin, dailyReward, dailyCipher, dailyCombo, mainCharacter, hamsterCoin } from '../images';
+import { binanceLogo, dollarCoin, dailyReward, dailyCipher, dailyCombo, mainCharacter, hamsterCoin, bg } from '../images';
 import { useNavigate } from 'react-router-dom';
 import "../App.css"
 
@@ -141,8 +141,9 @@ export default function HomePage() {
 
 
   return (
-    <div className=' h-full overflow-y-auto ' >
-      <div className="px-4 z-10">
+    <div className=' h-full relative overflow-y-auto ' >
+      <img src={bg} alt='bg' className=' absolute inset-0 h-full object-cover blur-sm ' />
+      <div className="px-4 z-10 relative ">
         <div className="flex items-center space-x-2 pt-4">
           {/* <div className="p-1 rounded-lg bg-[#102025]">
               <Hamster size={24} className="text-[#d4d4d4]" />
@@ -199,7 +200,7 @@ export default function HomePage() {
       <div className="flex-grow mt-4 rounded-t-[48px] relative z-0">
         <div className="absolute top-[2px] left-0 right-0 bottom-0 bg-[#1d2025] rounded-t-[46px]">
           <div className="px-4 mt-6 flex justify-between gap-2">
-            <div className="bg-[#272a2f] rounded-lg px-4 py-2 w-full relative">
+            <div role="button" onClick={() => navigate("/reward")} className="bg-[#272a2f] rounded-lg px-4 py-2 w-full relative">
               <div className="dot"></div>
               <img
                 src={dailyReward}
@@ -280,7 +281,7 @@ export default function HomePage() {
               />
               <p className="mt-1">Exchange</p>
             </div>
-            <button onClick={() => navigate("/reward")} className="text-center text-[#85827d] w-1/5">
+            <button className="text-center text-[#85827d] w-1/5">
               <Mine className="w-8 h-8 mx-auto" />
               <p className="mt-1">Build</p>
             </button>
