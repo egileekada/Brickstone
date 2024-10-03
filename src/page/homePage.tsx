@@ -141,7 +141,7 @@ export default function HomePage() {
 
 
   return (
-    <>
+    <div className=' h-full overflow-y-auto ' >
       <div className="px-4 z-10">
         <div className="flex items-center space-x-2 pt-4">
           {/* <div className="p-1 rounded-lg bg-[#102025]">
@@ -258,14 +258,14 @@ export default function HomePage() {
 
           <div className="px-4 mt-4 flex justify-center">
             <div
-              className="w-80 h-80 p-4 flex justify-center rounded-full circle-outer"
+              className="w-48 h-48 p-4 flex justify-center rounded-full circle-outer"
               onClick={handleCardClick}
             >
               <div className="w-full h-full rounded-full circle-inner">
                 <img
                   src={mainCharacter}
                   alt="Main Character"
-                  className="w-52 h-52"
+                  className="w-32 h-32"
                 />
               </div>
             </div>
@@ -318,6 +318,6 @@ export default function HomePage() {
           {pointsToAdd}
         </div>
       ))}
-    </>
+    </div>
   )
 }

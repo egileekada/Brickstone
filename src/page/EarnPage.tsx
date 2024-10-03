@@ -6,7 +6,7 @@ export default function EarnPage() {
     const navigate = useNavigate()
 
     return (
-        <div className=' w-full h-auto overflow-y-auto ' >
+        <div className=' w-full h-auto overflow-y-auto pb-6 ' >
             <div className=" w-full text-xl h-12 items-center  flex justify-center py-4 relative " >
                 <div role="button" onClick={() => navigate("/")} className=" absolute left-0 " >
                     <IoIosArrowBack />

@@ -7,6 +7,7 @@ import dailyCombo from "./combo.png";
 import mainCharacter from "./main.png";
 import mainCharacterTwo from "./main-character-two.png";
 import hamsterCoin from "./main.png";
+import house from "./house.jpeg";
 
 export {
     hamsterExchange,
@@ -17,5 +18,6 @@ export {
     dailyCombo,
     mainCharacter,
     mainCharacterTwo,
-    hamsterCoin
+    hamsterCoin,
+    house
 };
